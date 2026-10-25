@@ -1,4 +1,4 @@
-```python
+
 import sys
 from django.utils.timezone import now
 
@@ -163,4 +163,4 @@ class Submission(models.Model):
 
     def __str__(self):
         return f"Submission {self.id}"
-```
+
