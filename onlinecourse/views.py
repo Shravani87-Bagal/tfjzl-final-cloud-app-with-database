@@ -191,11 +191,12 @@ def show_exam_result(request, course_id, submission_id):
             total_score += question.grade
 
     context = {
-        'course': course,
-        'submission': submission,
-        'questions': questions,
-        'total_score': total_score,
-    }
+    'course': course,
+    'submission': submission,
+    'questions': questions,
+    'grade': total_score,
+    'total_score': total_score,
+}
 
     return render(
         request,
